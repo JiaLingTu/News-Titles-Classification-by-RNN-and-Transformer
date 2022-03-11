@@ -9,10 +9,11 @@ pip install -r requirements.txt
 ```
 
 ## Text Preprocessing in this projects
-- Choose the tokenizer
-    - It depends on which languages. [This]((https://blog.ekbana.com/private-nltk-vs-spacy-3926b3674ee4)) and [this](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/) document is  provided for your reference.
-
-- Workflow![workflow](./image/processing.png)
+1. Choose one kind of tokenizer. how to choose it is depends on which languages. [This]((https://blog.ekbana.com/private-nltk-vs-spacy-3926b3674ee4)) and [this](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/) document is  provided for your reference. In this repo, we use nltk.
+2. After tokenizing all sentences into lots words, we force all of them to be a lowercase. For examples, "Today" to "today".
+3. Lemma, convert all words to their root word. Such as "ran" to "run, "factories" to "factory", or "its" to "it".
+4. Remove stop words (as, the ,to, a, all...etc.)
+5. Depends on stage of train or test process. While training, we need to get the frequency of each word, and build a vocabularoty using pretrained embedding method (which is illustrated below.), and filter out some uncommon words (like frequency<2). While testing the model, we don't need to filter out any word.
 
 
 ## RNN
