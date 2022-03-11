@@ -23,7 +23,7 @@ The root folder should be structured as follows:
 ```
 
 ## Text Preprocessing in this projects
-1. Choose one kind of tokenizer. how to choose it is depends on which languages. [This]((https://blog.ekbana.com/private-nltk-vs-spacy-3926b3674ee4)) and [this](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/) document is  provided for your reference. In this repo, we use nltk.
+1. Choose one kind of tokenizer. how to choose it is depends on which languages. [This](https://blog.ekbana.com/private-nltk-vs-spacy-3926b3674ee4) and [this](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/) document is  provided for your reference. In this repo, we use nltk.
 2. After tokenizing all sentences into lots words, we force all of them to be a lowercase. For examples, "Today" to "today".
 3. Lemma, convert all words to their root word. Such as "ran" to "run, "factories" to "factory", or "its" to "it".
 4. Remove stop words (as, the ,to, a, all...etc.)
