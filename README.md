@@ -12,8 +12,7 @@ pip install -r requirements.txt
 - Choose the tokenizer
     - It depends on which languages. [This]((https://blog.ekbana.com/private-nltk-vs-spacy-3926b3674ee4)) and [this](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/) document is  provided for your reference.
 
-- Workflow
-    ![workflow](./image/processing.png)
+- Workflow![workflow](./image/processing.png)
 
 
 ## RNN
