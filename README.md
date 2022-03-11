@@ -8,6 +8,20 @@ Setup packages
 pip install -r requirements.txt
 ```
 
+## Data structure
+The root folder should be structured as follows:
+```
+  root/
+  ├─ data/      # you should download the dataset on the website and set the same name here.
+  |  ├─ train.csv
+  |  ├─ test.csv
+  |  └─ sample_submission.csv
+  |
+  ├─ README.md
+  ├─ RNN.py
+  └─ model.py
+```
+
 ## Text Preprocessing in this projects
 1. Choose one kind of tokenizer. how to choose it is depends on which languages. [This]((https://blog.ekbana.com/private-nltk-vs-spacy-3926b3674ee4)) and [this](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/) document is  provided for your reference. In this repo, we use nltk.
 2. After tokenizing all sentences into lots words, we force all of them to be a lowercase. For examples, "Today" to "today".
